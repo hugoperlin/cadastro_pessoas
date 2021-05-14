@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="sample.controller.CadastraDependente"
+          prefHeight="400.0" prefWidth="600.0">
+
+    <Label text="Responsável" labelFor="$cbPessoa" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    <ComboBox fx:id="cbPessoa" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+    <Label text="Nome:" labelFor="$tfNome" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <TextField fx:id="tfNome" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+    <Label text="Idade:" labelFor="$tfIdade" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <TextField fx:id="tfIdade" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+    <HBox GridPane.columnIndex="0" GridPane.rowIndex="3" GridPane.columnSpan="2">
+        <Button text="Cancelar" onAction="#cancelar"/>
+        <Button text="Cadastrar" onAction="#cadastra"/>
+    </HBox>
+
+    <ImageView fx:id="imgView" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+
+    <Button fx:id="btImg" onAction="#muda" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+</GridPane>
